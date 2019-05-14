@@ -41,7 +41,19 @@
         <h2 class="visually-hidden">Фильтр</h2>
         <form action="/" class="search-form">
           <fieldset class="search-form__fieldset fieldset">
-            <legend class="fieldset__legend">Сетка</legend>
+            <legend class="fieldset__legend">Стоимость:</legend>
+            <span class="fieldset__range-slider range-slider"></span>
+            <div class="range-inputs">
+              <label class="range-inputs__item range-input">от
+                <input type="text" class="range-input__tag" placeholder="0">
+              </label>
+              <label class="range-inputs__item range-input">до
+                <input type="text" class="range-input__tag" placeholder="15000">
+              </label>
+            </div>
+          </fieldset>
+          <fieldset class="search-form__fieldset fieldset">
+            <legend class="fieldset__legend">Сетка:</legend>
             <ul class="input-list">
               <li class="input-list__item">
                 <label class="custom-radio">
@@ -64,7 +76,7 @@
             </ul>
           </fieldset>
           <fieldset class="search-form__fieldset fieldset">
-            <legend class="fieldset__legend">Особенности</legend>
+            <legend class="fieldset__legend">Особенности:</legend>
             <ul class="input-list">
               <li class="input-list__item">
                 <label class="custom-radio">
