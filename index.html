@@ -37,6 +37,49 @@
     </header>
 
     <main class="main">
+      <section class="features">
+        <h2 class="visually-hidden">Преимущества</h2>
+        
+        <ul class="features__slide-controls slide-controls">
+          <li class="slide-controls__item">
+            <label class="slide-controls__btn" for="scrupulously"></label>
+          </li>
+          <li class="slide-controls__item">
+            <label class="slide-controls__btn" for="mathematics"></label>
+          </li>
+          <li class="slide-controls__item">
+            <label class="slide-controls__btn" for="night-work"></label>
+          </li>
+        </ul>
+
+        <input type="radio" name="feature" id="scrupulously" class="slide-controls__btn" checked>
+        <input type="radio" name="feature" id="mathematics">
+        <input type="radio" name="feature" id="night-work">
+
+        <ul class="features-list">
+          <li class="features-list__item feature feature--scrupulously">
+            <div class="feature__wrapper">
+              <h3 class="feature__title">Долго, дорого, скрупулезно.</h3>
+              <p class="feature__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+              <a href="#0" class="feature__btn btn btn--red">Узнать больше</a>
+            </div>
+          </li>
+          <li class="features-list__item feature feature--mathematics">
+            <div class="feature__wrapper">
+              <h3 class="feature__title">Любим математику как никто другой</h3>
+              <p class="feature__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+              <a href="#0" class="feature__btn btn btn--red">Узнать больше</a>
+            </div>
+          </li>
+          <li class="features-list__item feature feature--night-work">
+            <div class="feature__wrapper">
+              <h3 class="feature__title">Только ночь, только хардкор</h3>
+              <p class="feature__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+              <a href="#0" class="feature__btn btn btn--red">Узнать больше</a>
+            </div>
+          </li>
+        </ul>
+      </section>
       <section class="services">
         <h2 class="visually-hidden">Услуги</h2>
         <ul class="services-list">
