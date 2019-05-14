@@ -6,13 +6,13 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo logo">
+      <div class="logo header__logo">
         <a href="index.html" class="logo__link">
           <img src="img/svg/logo.svg" alt="Логотип дизайн-студии Nerds" class="logo__img" width="160" height="65">
         </a>
       </div>
       
-      <nav class="header__nav nav">
+      <nav class="nav header__nav">
         <ul class="nav-list">
           <li class="nav-list__item">
             <a href="#0" class="nav-list__link">Студия</a>
@@ -29,30 +29,30 @@
         </ul>
       </nav>
 
-      <div class="header__cart cart">
+      <div class="cart header__cart">
         <a href="#0" class="cart__link">Корзина</a>
       </div>
 
-      <h1 class="header__title title">Магазин готовых шаблонов</h1>
+      <h1 class="title header__title">Магазин готовых шаблонов</h1>
     </header>
 
     <main class="magazine">
       <aside class="filter">
         <h2 class="visually-hidden">Фильтр</h2>
         <form action="/" class="search-form">
-          <fieldset class="search-form__fieldset fieldset">
+          <fieldset class="fieldset search-form__fieldset">
             <legend class="fieldset__legend">Стоимость:</legend>
-            <span class="fieldset__range-slider range-slider"></span>
+            <span class="range-slider fieldset__range-slider"></span>
             <div class="range-fields">
-              <label class="range-fields__item range-field">от
+              <label class="range-field range-fields__item">от
                 <input type="number" class="range-field__input" placeholder="0">
               </label>
-              <label class="range-fields__item range-field">до
+              <label class="range-field range-fields__item">до
                 <input type="number" class="range-field__input" placeholder="15000">
               </label>
             </div>
           </fieldset>
-          <fieldset class="search-form__fieldset fieldset">
+          <fieldset class="fieldset search-form__fieldset">
             <legend class="fieldset__legend">Сетка:</legend>
             <ul class="input-list">
               <li class="input-list__item">
@@ -75,49 +75,49 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="search-form__fieldset fieldset">
+          <fieldset class="fieldset search-form__fieldset">
             <legend class="fieldset__legend">Особенности:</legend>
             <ul class="input-list">
               <li class="input-list__item">
-                <label class="custom-radio">
+                <label class="custom-checkbox">
                   <input type="checkbox" name="block">
                   Слайдер
                 </label>
               </li>
               <li class="input-list__item">
-                <label class="custom-radio">
+                <label class="custom-checkbox">
                   <input type="checkbox" name="block">
                   Блок преимуществ
                 </label>
               </li>
               <li class="input-list__item">
-                <label class="custom-radio">
+                <label class="custom-checkbox">
                   <input type="checkbox" name="block">
                   Новости
                 </label>
               </li>
               <li class="input-list__item">
-                <label class="custom-radio">
+                <label class="custom-checkbox">
                   <input type="checkbox" name="block">
                   Галерея
                 </label>
               </li>
               <li class="input-list__item">
-                <label class="custom-radio">
+                <label class="custom-checkbox">
                   <input type="checkbox" name="block">
                   Корзина
                 </label>
               </li>
             </ul>
           </fieldset>
-          <button type="submit" class="search-form__btn btn btn--gray">Показать</button>
+          <button type="submit" class="btn btn--gray search-form__btn">Показать</button>
         </form>
       </aside>
       <section class="magazine__content">
         <h2 class="visually-hiden">Список сайтов</h2>
         <section class="sorting">
           <h3 class="sorting__title">Сортировать:</h3>
-          <ul class="sorting__parameters parameters">
+          <ul class="parameters sorting__parameters">
             <li class="parameters__item">
               <a href="#0" class="parameters__link">По цене</a>
             </li>
@@ -128,7 +128,7 @@
               <a href="#0" class="parameters__link">По названию</a>
             </li>
           </ul>
-          <ul class="sorting__order-list order-list">
+          <ul class="order-list sorting__order-list">
             <li class="order-list__item">
               <a href="#0" class="order-list__link">по возрастанию</a>
             </li>
@@ -138,86 +138,86 @@
           </ul>
         </section>
         <ul class="products">
-          <li class="products__item site">
+          <li class="site products__item">
             <img src="img/pictures/sites/sedona.jpg" alt="Превью Sedona" class="site__img" width="360" height="576">
             <div class="site__wrapper">
               <h3 class="site__title">Sedona</h3>
               <p class="site__desc">Информационный сайт для туристов</p>
-              <a href="#0" class="site__btn btn btn--red">9 900 руб.</a>
+              <a href="#0" class="btn btn--red site__btn">9 900 руб.</a>
             </div>
           </li>
-          <li class="products__item site">
+          <li class="site products__item">
             <img src="img/pictures/sites/pink.jpg" alt="Превью Pink App" class="site__img" width="360" height="576">
             <div class="site__wrapper">
               <h3 class="site__title">Pink App</h3>
               <p class="site__desc">Продуктовый лендинг приложения для iOS и Android</p>
-              <a href="#0" class="site__btn btn btn--red">9 900 руб.</a>
+              <a href="#0" class="btn btn--red site__btn">9 900 руб.</a>
             </div>
           </li>
-          <li class="products__item site">
+          <li class="site products__item">
             <img src="img/pictures/sites/barbershop.jpg" alt="Превью Barbershop" class="site__img" width="360" height="576">
             <div class="site__wrapper">
               <h3 class="site__title">Barbershop</h3>
               <p class="site__desc">Сайт салона красоты. Для мужчин, да.</p>
-              <a href="#0" class="site__btn btn btn--red">9 900 руб.</a>
+              <a href="#0" class="btn btn--red site__btn">9 900 руб.</a>
             </div>
           </li>
-          <li class="products__item site">
+          <li class="site products__item">
             <img src="img/pictures/sites/mishka.jpg" alt="Превью MISHKA" class="site__img" width="360" height="576">
             <div class="site__wrapper">
               <h3 class="site__title">MISHKA</h3>
               <p class="site__desc">Интернет-магазин вязаных игрушек</p>
-              <a href="#0" class="site__btn btn btn--red">9 900 руб.</a>
+              <a href="#0" class="btn btn--red site__btn">9 900 руб.</a>
             </div>
           </li>
-          <li class="products__item site">
+          <li class="site products__item">
             <img src="img/pictures/sites/aplus.jpg" alt="Превью A Plus" class="site__img" width="360" height="576">
             <div class="site__wrapper">
               <h3 class="site__title">A Plus</h3>
               <p class="site__desc">Лендинг курсов повышения квалификации</p>
-              <a href="#0" class="site__btn btn btn--red">9 900 руб.</a>
+              <a href="#0" class="btn btn--red site__btn">9 900 руб.</a>
             </div>
           </li>
-          <li class="products__item site">
+          <li class="site products__item">
             <img src="img/pictures/sites/kvast.jpg" alt="Превью КВАСТ" class="site__img" width="360" height="576">
             <div class="site__wrapper">
               <h3 class="site__title">КВАСТ</h3>
               <p class="site__desc">Промо-сайт производителя крафтового кваса</p>
-              <a href="#0" class="site__btn btn btn--red">9 900 руб.</a>
+              <a href="#0" class="btn btn--red site__btn">9 900 руб.</a>
             </div>
           </li>
         </ul>
         <ul class="pagination">
           <li class="pagination__item">
-            <a href="#0" class="pagination__btn pagination__btn--active btn btn--gray">1</a>
+            <a href="#0" class="btn btn--gray pagination__btn pagination__btn--active">1</a>
           </li>
           <li class="pagination__item">
-            <a href="#0" class="pagination__btn btn btn--gray">2</a>
+            <a href="#0" class="btn btn--gray pagination__btn">2</a>
           </li>
           <li class="pagination__item">
-            <a href="#0" class="pagination__btn btn btn--gray">3</a>
+            <a href="#0" class="btn btn--gray pagination__btn">3</a>
           </li>
           <li class="pagination__item">
-            <a href="#0" class="pagination__btn pagination__btn--next btn btn--gray">следующая</a>
+            <a href="#0" class="btn btn--gray pagination__btn pagination__btn--next">следующая</a>
           </li>
         </ul>
       </section>
     </main>
 
     <footer class="footer">
-      <section class="footer__map map">
+      <section class="map footer__map">
         <h2 class="visually-hidden">Как нас найти</h2>
 
         <div id="#map" class="map__container"></div>
 
-        <div class="map__contacts contacts">
+        <div class="contacts map__contacts">
           <p class="contacts__title">NЁRDS DESIGN STUDIO</p>
           <p class="contacts__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br><br>тел. +7 (812) 275-75-75</p>
-          <button class="contacts__btn btn btn--red">Напишите нам</button>
+          <button class="btn btn--red contacts__btn">Напишите нам</button>
         </div>
       </section>
       <div class="footer__bottom">
-        <ul class="footer__socials socials">
+        <ul class="socials footer__socials">
           <li class="socials__item">
             <a href="#0" class="socials__link socials__link--vk">Вконтакте</a>
           </li>
@@ -229,7 +229,7 @@
           </li>
         </ul>
   
-        <div class="footer__appeal appeal">
+        <div class="appeal footer__appeal">
           <p class="appeal__title"><b>Давайте дружить, это выгодно!</b></p>
           <p class="appeal__hint">Скидка 10% для друзей из социальных сетей.</p>
         </div>
