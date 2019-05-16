@@ -214,7 +214,7 @@
           <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
           <address class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
           <a href="tel:+78122757575" class="contacts__phone">тел. +7 (812) 275-75-75</a>
-          <button class="btn btn--red contacts__btn">Напишите нам</button>
+          <button type="button" class="btn btn--red contacts__btn">Напишите нам</button>
         </section>
       </section>
       <div class="footer__bottom">
@@ -236,5 +236,29 @@
         </div>
       </div>
     </footer>
+
+    <section class="modal">
+      <h2 class="modal__title">Напишите нам</h2>
+      <form action="/" class="form modal__form">
+        <div class="form__row">
+          <p class="ipt form__col">
+            <label for="request-name" class="ipt__label">Ваше имя:</label>
+            <input type="text" name="name" id="request-name" placeholder="Имя Фамилия" class="ipt__field">
+          </p>
+          <p class="ipt form__col">
+            <label for="request-email" class="ipt__label">Ваш e-mail:</label>
+            <input type="email" name="email" id="request-email" placeholder="email@example.com" class="ipt__field">
+          </p>
+        </div>
+        <div class="form__row">
+          <p class="ipt ipt--textarea">
+            <label for="request-text" class="ipt__label">Текст письма:</label>
+            <textarea name="text" id="request-text" placeholder="В свободной форме" class="ipt__field"></textarea>
+          </p>
+        </div>
+        <button type="submit" class="btn btn--red form__btn">Отправить</button>
+      </form>
+      <button type="button" class="close modal__close">Закрыть</button>
+    </section>
   </body>
 </html>
