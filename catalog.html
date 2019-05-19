@@ -48,7 +48,7 @@
                   <div class="range-slider__line"></div>
                   <button type="button" class="range-slider__btn"></button>
                   <button type="button" class="range-slider__btn"></button>
-                <div>
+                </div>
               </div>
               <div class="range-fields gamut__range-fields">
                 <label class="range-field range-fields__item">от
@@ -248,25 +248,25 @@
     <section class="modal">
       <h2 class="modal__title">Напишите нам</h2>
       <form action="/" class="form modal__form">
-        <div class="form__row">
-          <p class="ipt form__col">
+        <div class="form__wrapper">
+          <div class="ipt form__field">
             <label for="request-name" class="ipt__label">Ваше имя:</label>
-            <input type="text" name="name" id="request-name" placeholder="Имя Фамилия" class="ipt__field">
-          </p>
-          <p class="ipt form__col">
+            <input type="text" name="name" id="request-name" class="ipt__field" value="" placeholder="Имя Фамилия">
+          </div>
+          <div class="ipt form__field">
             <label for="request-email" class="ipt__label">Ваш e-mail:</label>
-            <input type="email" name="email" id="request-email" placeholder="email@example.com" class="ipt__field">
-          </p>
+            <input type="email" name="email" id="request-email" class="ipt__field" value="" placeholder="email@example.com">
+          </div>
         </div>
-        <div class="form__row">
-          <p class="ipt ipt--textarea">
+        <div class="form__wrapper">
+          <div class="ipt ipt--textarea">
             <label for="request-text" class="ipt__label">Текст письма:</label>
-            <textarea name="text" id="request-text" placeholder="В свободной форме" class="ipt__field"></textarea>
-          </p>
+            <textarea name="text" id="request-text" class="ipt__field" placeholder="В свободной форме"></textarea>
+          </div>
         </div>
         <button type="submit" class="btn btn--red form__btn">Отправить</button>
       </form>
-      <button type="button" class="close modal__close">Закрыть</button>
+      <a href="#0" class="close modal__close">Закрыть</a>
     </section>
   </body>
 </html>
