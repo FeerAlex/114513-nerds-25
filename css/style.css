@@ -185,6 +185,78 @@ a {
   text-transform: uppercase;
 }
 
+.fieldset {
+  border: none;
+}
+
+.fieldset__legend {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.05px;
+}
+
+.input-list {
+  list-style: none;
+}
+
+.range-field {
+  text-transform: uppercase;
+}
+
+.range-field__input {
+  font: inherit;
+
+  background-color: #eeeeee;
+  border: none;
+}
+
+.products {
+  list-style: none;
+}
+
+.site {
+  border: 1px solid rgba(0, 1, 1, 0.1);
+}
+
+.site:hover,
+.site:focus {
+  border: 1px solid rgba(77, 77, 77, 0.1);
+  box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
+}
+
+.site__wrapper {
+  background-color: #eeeeee;
+}
+
+.site__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.site__link {
+  color: inherit;
+}
+
+.site__link:hover,
+.site__link:focus {
+  color: #fb565a;
+}
+
+.site__link:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site__desc {
+  line-height: 18px;
+  color: #666666;
+}
+
 .appeal__title {
   font-size: 36px;
   line-height: 36px;
@@ -201,6 +273,8 @@ a {
 }
 
 .socials__link {
+  color: #ffffff;
+
   background-color: #e1e1e1;
 }
 
