@@ -329,7 +329,6 @@ a {
 }
 
 .service__title {
-  font-weight: 700;
   font-size: 24px;
   line-height: 30px;
   color: #000000;
@@ -432,10 +431,9 @@ a {
 }
 
 .sorting__title {
-  color: #000000;
   font-size: 18px;
-  font-weight: 700;
   line-height: 18px;
+  color: #000000;
 }
 
 .parameters,
@@ -445,8 +443,9 @@ a {
 
 .parameters__link,
 .order-list__link {
-  color: #000000;
   line-height: 18px;
+  color: #000000;
+
   opacity: 0.3;
 }
 
@@ -483,7 +482,6 @@ a {
 }
 
 .site__title {
-  font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
