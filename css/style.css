@@ -52,6 +52,13 @@ a {
   text-decoration: none;
 }
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
 .btn {
   font: inherit;
   font-weight: 500;
@@ -128,14 +135,26 @@ a {
 }
 
 .title {
+  margin-bottom: 0;
+  padding-top: 80px;
+  padding-bottom: 116px;
+
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
+  text-align: center;
   color: #000000;
 }
 
 .header {
+  margin-bottom: 18px;
+
   background-color: #eeeeee;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
 }
 
 .logo__link:hover,
@@ -324,8 +343,24 @@ a {
   opacity: 0.1;
 }
 
+.services {
+  margin-bottom: 120px;
+}
+
 .services-list {
+  display: flex;
+  margin-bottom: 0;
+  padding-left: 0;
+
   list-style: none;
+}
+
+.services-list__item {
+  width: 300px;
+}
+
+.services-list__item + .services-list__item {
+  margin-left: 100px;
 }
 
 .service__title {
@@ -333,6 +368,19 @@ a {
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper__filter {
+  width: 260px;
+}
+
+.wrapper__content {
+  flex: 1;
+  margin-left: 140px;
 }
 
 .fieldset {
@@ -464,7 +512,18 @@ a {
 }
 
 .products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 60px;
+  padding-left: 0;
+
   list-style: none;
+}
+
+.products__item {
+  width: 360px;
+  margin-bottom: 30px;
 }
 
 .site {
@@ -508,6 +567,14 @@ a {
 
 .pagination {
   list-style: none;
+}
+
+.footer__container {
+  display: flex;
+}
+
+.footer__appeal {
+  margin-left: 140px;
 }
 
 .appeal__title {
