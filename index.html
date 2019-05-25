@@ -44,10 +44,40 @@
       <section class="features">
         <h2 class="visually-hidden">Преимущества</h2>
 
-        <input type="radio" name="feature" id="scrupulously" class="features__hide-control" checked>
-        <input type="radio" name="feature" id="mathematics" class="features__hide-control">
-        <input type="radio" name="feature" id="night-work" class="features__hide-control">
-        
+        <input type="radio" name="feature" id="scrupulously" class="features__hide-control visually-hidden" checked>
+        <input type="radio" name="feature" id="mathematics" class="features__hide-control visually-hidden">
+        <input type="radio" name="feature" id="night-work" class="features__hide-control visually-hidden">
+
+        <ul class="features-list">
+          <li class="features-list__item">
+            <div class="container">
+              <div class="feature feature--scrupulously">
+                <h3 class="feature__title">Долго, дорого, скрупулезно.</h3>
+                <p class="feature__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+                <a href="#0" class="btn btn--red feature__btn">Узнать больше</a>
+              </div>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <div class="container">
+              <div class="feature feature--mathematics">
+                <h3 class="feature__title">Любим математику, как никто другой</h3>
+                <p class="feature__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
+                <a href="#0" class="btn btn--red feature__btn">Узнать больше</a>
+              </div>
+            </div>
+          </li>
+          <li class="features-list__item">
+            <div class="container">
+              <div class="feature feature--night-work">
+                <h3 class="feature__title">Только ночь, только хардкор</h3>
+                <p class="feature__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
+                <a href="#0" class="btn btn--red feature__btn">Узнать больше</a>
+              </div>
+            </div>
+          </li>
+        </ul>
+
         <ul class="slide-controls features__slide-controls">
           <li class="slide-controls__item">
             <label class="slide-controls__btn" for="scrupulously">Первый слайд</label>
@@ -57,30 +87,6 @@
           </li>
           <li class="slide-controls__item">
             <label class="slide-controls__btn" for="night-work">Третий слайд</label>
-          </li>
-        </ul>
-
-        <ul class="features-list">
-          <li class="feature feature--scrupulously features-list__item">
-            <div class="feature__wrapper">
-              <h3 class="feature__title">Долго, дорого, скрупулезно.</h3>
-              <p class="feature__text">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
-              <a href="#0" class="btn btn--red feature__btn">Узнать больше</a>
-            </div>
-          </li>
-          <li class="feature feature--mathematics features-list__item">
-            <div class="feature__wrapper">
-              <h3 class="feature__title">Любим математику, как никто другой</h3>
-              <p class="feature__text">Никакого креатива, только математические формулы для расчета идеальных пропорций.</p>
-              <a href="#0" class="btn btn--red feature__btn">Узнать больше</a>
-            </div>
-          </li>
-          <li class="feature feature--night-work features-list__item">
-            <div class="feature__wrapper">
-              <h3 class="feature__title">Только ночь, только хардкор</h3>
-              <p class="feature__text">Работать днем, как все? Мы против этого. Ближе к полуночи работа только начинается.</p>
-              <a href="#0" class="btn btn--red feature__btn">Узнать больше</a>
-            </div>
           </li>
         </ul>
       </section>
@@ -112,34 +118,32 @@
 
         <section class="about">
           <h2 class="visually-hidden">О нас</h2>
-          <div class="about__wrapper">
-            <div class="about__text">
-              <p class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
-              <p class="about__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-              <div class="orders about__orders">
-                <p class="orders__title"><b>Выполняем заказы на разработку:</b></p>
-                <ul class="orders-list">
-                  <li class="orders-list__item">Веб-сайтов любой сложности</li>
-                  <li class="orders-list__item">Мобильных приложений для iOS и Android</li>
-                  <li class="orders-list__item">Слайдшоу и видео для корпоративных презентаций</li>
-                </ul>
-              </div>
+          <div class="about__text">
+            <p class="about__title">Мы — маленькая, но гордая дизайн-студия из Краснодара. </p>
+            <p class="about__desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+            <div class="orders about__orders">
+              <p class="orders__title"><b>Выполняем заказы на разработку:</b></p>
+              <ul class="orders-list">
+                <li class="orders-list__item">Веб-сайтов любой сложности</li>
+                <li class="orders-list__item">Мобильных приложений для iOS и Android</li>
+                <li class="orders-list__item">Слайдшоу и видео для корпоративных презентаций</li>
+              </ul>
             </div>
-            <div class="performance about__performance">
-              <p class="performance__title"><b>С 2004 года любим точность во всем:</b></p>
-              <table class="figure-table performance__figure-table">
-                <tr class="figure-table__tr">
-                  <th class="percent figure-table__th">146<sup class="percent__unit">%</sup></th>
-                  <th class="percent figure-table__th">100<sup class="percent__unit">%</sup></th>
-                  <th class="percent figure-table__th">50<sup class="percent__unit">%</sup></th>
-                </tr>
-                <tr class="figure-table__tr">
-                  <td class="figure-table__td">Уровень самоотдачи</td>
-                  <td class="figure-table__td">Соблюдение сроков</td>
-                  <td class="figure-table__td">Минимальная предоплата</td>
-                </tr>
-              </table>
-            </div>
+          </div>
+          <div class="performance about__performance">
+            <p class="performance__title"><b>С 2004 года любим точность во всем:</b></p>
+            <table class="figure-table performance__figure-table">
+              <tr class="figure-table__tr">
+                <th class="percent figure-table__th">146<sup class="percent__unit">%</sup></th>
+                <th class="percent figure-table__th">100<sup class="percent__unit">%</sup></th>
+                <th class="percent figure-table__th">50<sup class="percent__unit">%</sup></th>
+              </tr>
+              <tr class="figure-table__tr">
+                <td class="figure-table__td">Уровень самоотдачи</td>
+                <td class="figure-table__td">Соблюдение сроков</td>
+                <td class="figure-table__td">Минимальная предоплата</td>
+              </tr>
+            </table>
           </div>
         </section>
 
