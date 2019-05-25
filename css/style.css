@@ -313,52 +313,51 @@ a {
 }
 
 .features-list {
+  display: flex;
+  width: 300%;
   margin: 0;
   padding-left: 0;
 
   list-style: none;
+
+  transition: transform 0.5s;
 }
 
 .features-list__item {
-  position: absolute;
-  top: 0;
-  left: 0;
+  display: inline-block;
+  width: 33.333333%;
 
-  width: 100%;
+  visibility: hidden;
+  opacity: 0;
 
-  animation-name: slideOut;
-  animation-duration: 0.9s;
-
-  animation-fill-mode: forwards;
+  transition: all 1s;
 }
 
-.features__hide-control:nth-of-type(1):checked ~ .features-list .features-list__item:nth-child(1),
-.features__hide-control:nth-of-type(2):checked ~ .features-list .features-list__item:nth-child(2),
+.features__hide-control:nth-of-type(1):checked ~ .features-list {
+  transform: translateX(0);
+}
+
+.features__hide-control:nth-of-type(2):checked ~ .features-list {
+  transform: translateX(-33.333333%);
+}
+
+.features__hide-control:nth-of-type(3):checked ~ .features-list {
+  transform: translateX(-66.666666%);
+}
+
+.features__hide-control:nth-of-type(1):checked ~ .features-list .features-list__item:nth-child(1) {
+  visibility: visible;
+  opacity: 1;
+}
+
+.features__hide-control:nth-of-type(2):checked ~ .features-list .features-list__item:nth-child(2) {
+  visibility: visible;
+  opacity: 1;
+}
+
 .features__hide-control:nth-of-type(3):checked ~ .features-list .features-list__item:nth-child(3) {
-  animation-name: slideIn;
-}
-
-
-@keyframes slideOut {
-  from {
-    transform: translate3d(0, 0, 0);
-  }
-
-  to {
-    transform: translate3d(-100%, 0, 0);
-    visibility: hidden;
-  }
-}
-
-@keyframes slideIn {
-  from {
-    transform: translate3d(100%, 0, 0);
-    visibility: visible;
-  }
-
-  to {
-    transform: translate3d(0, 0, 0);
-  }
+  visibility: visible;
+  opacity: 1;
 }
 
 .features__slide-controls {
