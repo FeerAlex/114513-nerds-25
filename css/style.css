@@ -526,41 +526,41 @@ a {
   margin-bottom: 30px;
 }
 
-.site {
+.product {
   border: 1px solid rgba(0, 1, 1, 0.1);
 }
 
-.site:hover,
-.site:focus {
+.product:hover,
+.product:focus {
   border: 1px solid rgba(77, 77, 77, 0.1);
   box-shadow: 0 6px 15px rgba(0, 1, 1, 0.25);
 }
 
-.site__wrapper {
+.product__wrapper {
   background-color: #eeeeee;
 }
 
-.site__title {
+.product__title {
   font-size: 18px;
   line-height: 30px;
   color: #000000;
   text-transform: uppercase;
 }
 
-.site__link {
+.product__link {
   color: inherit;
 }
 
-.site__link:hover,
-.site__link:focus {
+.product__link:hover,
+.product__link:focus {
   color: #fb565a;
 }
 
-.site__link:active {
+.product__link:active {
   color: rgba(0, 0, 0, 0.3);
 }
 
-.site__desc {
+.product__desc {
   line-height: 18px;
   color: #666666;
 }
