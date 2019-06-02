@@ -162,6 +162,30 @@ input[type="radio"].visually-hidden {
   background-color: #e5a722;
 }
 
+.close {
+  width: 21px;
+  height: 21px;
+
+  font-size: 0;
+
+  background-image: url("../img/svg/close-cross.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  opacity: 0.2;
+
+  transition: all 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  opacity: 1;
+}
+
+.close:active {
+  opacity: 0.1;
+}
+
 .title {
   margin-bottom: 0;
   padding-top: 80px;
@@ -686,8 +710,6 @@ input[type="radio"].visually-hidden {
   position: relative;
 
   height: 416px;
-
-  background-color: red;
 }
 
 .map__container {
@@ -1025,13 +1047,15 @@ input[type="radio"].visually-hidden {
 }
 
 .modal--show {
-  animation: bounceInDown 1s;
   visibility: visible;
+
+  animation: bounceInDown 1s;
 }
 
 .modal--hide {
-  animation: bounceOutUp 1s;
   visibility: hidden;
+
+  animation: bounceOutUp 1s;
 }
 
 @keyframes bounceInDown {
@@ -1089,12 +1113,13 @@ input[type="radio"].visually-hidden {
 }
 
 .modal__content {
-  width: 960px;
-  padding-top: 70px;
-  padding-right: 9px;
-  padding-bottom: 80px;
-  padding-left: 100px;
   position: relative;
+
+  width: 960px;
+  padding-top: 67px;
+  padding-right: 100px;
+  padding-bottom: 84px;
+  padding-left: 100px;
 
   background-color: #ffffff;
   box-shadow: 0 20px 40px rgba(0, 1, 1, 0.75);
@@ -1102,7 +1127,7 @@ input[type="radio"].visually-hidden {
 
 .modal__title {
   margin-top: 0;
-  margin-bottom: 50px;
+  margin-bottom: 38px;
 
   font-weight: 500;
   font-size: 45px;
@@ -1110,7 +1135,34 @@ input[type="radio"].visually-hidden {
   color: #000000;
 }
 
+.modal__close {
+  position: absolute;
+  top: 78px;
+  right: 90px;
+}
+
+.form__wrapper {
+  display: flex;
+  margin-bottom: 31px;
+}
+
+.form__field {
+  flex: 1;
+}
+
+.form__field + .form__field {
+  margin-left: 40px;
+}
+
+.form__btn {
+  min-width: 260px;
+  margin-top: 47px;
+}
+
 .ipt__label {
+  display: inline-block;
+  margin-bottom: 9px;
+
   font-weight: 700;
   line-height: 18px;
   color: #000000;
@@ -1118,6 +1170,8 @@ input[type="radio"].visually-hidden {
 
 .ipt__field {
   display: block;
+  width: 100%;
+  padding: 15px 12px 13px;
 
   font: inherit;
   line-height: 18px;
@@ -1125,6 +1179,14 @@ input[type="radio"].visually-hidden {
 
   background-color: #ffffff;
   border: 2px solid #d7dcde;
+
+  transition: all 0.3s;
+}
+
+.ipt--textarea .ipt__field {
+  height: 118px;
+
+  resize: none;
 }
 
 .ipt__field:hover {
@@ -1142,17 +1204,4 @@ input[type="radio"].visually-hidden {
   color: #e74246;
 
   border-color: #e74246;
-}
-
-.close {
-  opacity: 0.2;
-}
-
-.close:hover,
-.close:focus {
-  opacity: 1;
-}
-
-.close:active {
-  opacity: 0.1;
 }
