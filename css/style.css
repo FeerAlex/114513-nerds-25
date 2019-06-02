@@ -1035,27 +1035,19 @@ input[type="radio"].visually-hidden {
   left: 0;
   z-index: 100;
 
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   width: 100vw;
   height: 100vh;
 
-  visibility: hidden;
-
   animation-fill-mode: forwards;
 }
 
 .modal--show {
-  visibility: visible;
+  display: flex;
 
   animation: bounceInDown 1s;
-}
-
-.modal--hide {
-  visibility: hidden;
-
-  animation: bounceOutUp 1s;
 }
 
 @keyframes bounceInDown {
@@ -1087,28 +1079,6 @@ input[type="radio"].visually-hidden {
 
   100% {
     transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes bounceOutUp {
-  0% {
-    visibility: visible;
-  }
-
-  20% {
-    transform: translate3d(0, -10px, 0);
-  }
-
-  40%,
-  45% {
-    transform: translate3d(0, 20px, 0);
-    opacity: 1;
-  }
-
-  100% {
-    transform: translate3d(0, -2000px, 0);
-    visibility: hidden;
-    opacity: 0;
   }
 }
 
