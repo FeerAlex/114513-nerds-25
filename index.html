@@ -179,14 +179,16 @@
       <section class="map footer__map">
         <h2 class="visually-hidden">Как нас найти</h2>
 
-        <div id="#map" class="map__container"></div>
+        <div id="map" class="map__container"></div>
 
-        <section class="contacts map__contacts">
-          <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
-          <address class="contacts__address">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</address>
-          <a href="tel:+78122757575" class="contacts__phone">тел. +7 (812) 275-75-75</a>
-          <button type="button" class="btn btn--red contacts__btn">Напишите нам</button>
-        </section>
+        <div class="container">
+          <section class="contacts map__contacts">
+            <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
+            <address class="contacts__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
+            <a href="tel:+78122757575" class="contacts__phone">тел. +7 (812) 275-75-75</a>
+            <button type="button" class="btn btn--red contacts__btn" id="feedback">Напишите нам</button>
+          </section>
+        </div>
       </section>
       <div class="footer__bottom">
         <div class="container footer__container">
@@ -210,28 +212,33 @@
       </div>
     </footer>
 
-    <section class="modal">
-      <h2 class="modal__title">Напишите нам</h2>
-      <form action="/" class="form modal__form">
-        <div class="form__wrapper">
-          <div class="ipt form__field">
-            <label for="request-name" class="ipt__label">Ваше имя:</label>
-            <input type="text" name="name" id="request-name" class="ipt__field" value="" placeholder="Имя Фамилия">
+    <section class="modal" id="modal">
+      <div class="modal__content">
+        <h2 class="modal__title">Напишите нам</h2>
+        <form action="/" class="form modal__form">
+          <div class="form__wrapper">
+            <div class="ipt form__field">
+              <label for="request-name" class="ipt__label">Ваше имя:</label>
+              <input type="text" name="name" id="request-name" class="ipt__field" value="" placeholder="Имя Фамилия">
+            </div>
+            <div class="ipt form__field">
+              <label for="request-email" class="ipt__label">Ваш e-mail:</label>
+              <input type="email" name="email" id="request-email" class="ipt__field" value="" placeholder="email@example.com">
+            </div>
           </div>
-          <div class="ipt form__field">
-            <label for="request-email" class="ipt__label">Ваш e-mail:</label>
-            <input type="email" name="email" id="request-email" class="ipt__field" value="" placeholder="email@example.com">
+          <div class="form__wrapper">
+            <div class="ipt ipt--textarea">
+              <label for="request-text" class="ipt__label">Текст письма:</label>
+              <textarea name="text" id="request-text" class="ipt__field" placeholder="В свободной форме"></textarea>
+            </div>
           </div>
-        </div>
-        <div class="form__wrapper">
-          <div class="ipt ipt--textarea">
-            <label for="request-text" class="ipt__label">Текст письма:</label>
-            <textarea name="text" id="request-text" class="ipt__field" placeholder="В свободной форме"></textarea>
-          </div>
-        </div>
-        <button type="submit" class="btn btn--red form__btn">Отправить</button>
-      </form>
-      <a href="#0" class="close modal__close">Закрыть</a>
+          <button type="submit" class="btn btn--red form__btn">Отправить</button>
+        </form>
+        <a href="#0" class="close modal__close">Закрыть</a>
+      </div>
     </section>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32_mj6CMe5DwGoRkaGJDyCR20DytLaD4&callback=initMap"></script>
+    <script src="js/index.js"></script>
   </body>
 </html>
