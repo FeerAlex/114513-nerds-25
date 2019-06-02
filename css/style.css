@@ -210,8 +210,9 @@ input[type="radio"].visually-hidden {
   align-items: flex-end;
 }
 
-.logo {
-  line-height: 0;
+.logo__link,
+.logo__img {
+  display: block;
 }
 
 .logo__link:hover,
@@ -1044,6 +1045,7 @@ input[type="radio"].visually-hidden {
   animation-fill-mode: forwards;
 }
 
+.modal:target,
 .modal--show {
   display: flex;
 

@@ -5,6 +5,7 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
     <h1 class="visually-hidden">Дизайн-студия Nerds</h1>
@@ -186,7 +187,7 @@
             <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
             <address class="contacts__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
             <a href="tel:+78122757575" class="contacts__phone">тел. +7 (812) 275-75-75</a>
-            <button type="button" class="btn btn--red contacts__btn" id="feedback">Напишите нам</button>
+            <a href="#modal" class="btn btn--red contacts__btn" id="feedback">Напишите нам</a>
           </section>
         </div>
       </section>
@@ -232,11 +233,10 @@
           </div>
           <button type="submit" class="btn btn--red form__btn">Отправить</button>
         </form>
-        <a href="#0" class="close modal__close">Закрыть</a>
+        <a href="#map" class="close modal__close">Закрыть</a>
       </div>
     </section>
 
-    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC32_mj6CMe5DwGoRkaGJDyCR20DytLaD4&callback=initMap"></script>
     <script src="js/index.js"></script>
   </body>
 </html>
