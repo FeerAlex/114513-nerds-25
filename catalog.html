@@ -47,7 +47,7 @@
           <h2 class="visually-hidden">Фильтр</h2>
           <form action="/" class="search-form">
             <fieldset class="fieldset search-form__fieldset">
-              <legend class="fieldset__legend">Стоимость:</legend>
+              <legend class="fieldset__legend fieldset__legend--price">Стоимость:</legend>
               <div class="gamut">
                 <div class="range-slider gamut__range-slider">
                   <div class="range-slider__wrapper">
@@ -70,21 +70,24 @@
               <legend class="fieldset__legend">Сетка:</legend>
               <ul class="input-list">
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--radio">
-                    <input class="custom-control__input" type="radio" name="grid" disabled>
-                    <span class="custom-control__label">Адаптивная</span>
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="grid" disabled>
+                    <span class="radio__box"></span>
+                    Адаптивная
                   </label>
                 </li>
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--radio">
-                    <input class="custom-control__input" type="radio" name="grid">
-                    <span class="custom-control__label">Фиксированная</span>
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="grid">
+                    <span class="radio__box"></span>
+                    Фиксированная
                   </label>
                 </li>
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--radio">
-                    <input class="custom-control__input" type="radio" name="grid">
-                    <span class="custom-control__label">Резиновая</span>
+                  <label class="radio">
+                    <input class="radio__input visually-hidden" type="radio" name="grid">
+                    <span class="radio__box"></span>
+                    Резиновая
                   </label>
                 </li>
               </ul>
@@ -93,33 +96,38 @@
               <legend class="fieldset__legend">Особенности:</legend>
               <ul class="input-list">
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--checkbox">
-                    <input class="custom-control__input" type="checkbox" name="block">
-                    <span class="custom-control__label">Слайдер</span>
+                  <label class="check">
+                    <input class="check__input visually-hidden" type="checkbox" name="block" checked>
+                    <span class="check__box"></span>
+                    Слайдер
                   </label>
                 </li>
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--checkbox">
-                    <input class="custom-control__input" type="checkbox" name="block" disabled>
-                    <span class="custom-control__label">Блок преимуществ</span>
+                  <label class="check">
+                    <input class="check__input visually-hidden" type="checkbox" name="block" disabled>
+                    <span class="check__box"></span>
+                    Блок преимуществ
                   </label>
                 </li>
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--checkbox">
-                    <input class="custom-control__input" type="checkbox" name="block">
-                    <span class="custom-control__label">Новости</span>
+                  <label class="check">
+                    <input class="check__input visually-hidden" type="checkbox" name="block" checked disabled>
+                    <span class="check__box"></span>
+                    Новости
                   </label>
                 </li>
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--checkbox">
-                    <input class="custom-control__input" type="checkbox" name="block">
-                    <span class="custom-control__label">Галерея</span>
+                  <label class="check">
+                    <input class="check__input visually-hidden" type="checkbox" name="block">
+                    <span class="check__box"></span>
+                    Галерея
                   </label>
                 </li>
                 <li class="input-list__item">
-                  <label class="custom-control custom-control--checkbox">
-                    <input class="custom-control__input" type="checkbox" name="block">
-                    <span class="custom-control__label">Корзина</span>
+                  <label class="check">
+                    <input class="check__input visually-hidden" type="checkbox" name="block">
+                    <span class="check__box"></span>
+                    Корзина
                   </label>
                 </li>
               </ul>
@@ -146,10 +154,14 @@
             </ul>
             <ul class="order-list sorting__order-list">
               <li class="order-list__item">
-                <a href="#0" class="order-list__link order-list__link--active">по возрастанию</a>
+                <a href="#0" class="order-list__link order-list__link--active">
+                  <span class="visually-hidden">по убыванию</span>
+                </a>
               </li>
               <li class="order-list__item">
-                <a href="#0" class="order-list__link">по убыванию</a>
+                <a href="#0" class="order-list__link order-list__link--up">
+                  <span class="visually-hidden">по возрастанию</span>
+                </a>
               </li>
             </ul>
           </section>
@@ -264,9 +276,9 @@
             <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
             <address class="contacts__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
             <a href="tel:+78122757575" class="contacts__phone">тел. +7 (812) 275-75-75</a>
-            <button type="button" class="btn btn--red contacts__btn" id="feedback">
+            <a href="#modal" class="btn btn--red contacts__btn" id="feedback">
               <span class="btn__text">Напишите нам</span>
-            </button>
+            </a>
           </section>
         </div>
       </section>
@@ -314,7 +326,7 @@
             <span class="btn__text">Отправить</span>
           </button>
         </form>
-        <a href="#0" class="close modal__close">Закрыть</a>
+        <a href="#map" class="close modal__close">Закрыть</a>
       </div>
     </section>
 
