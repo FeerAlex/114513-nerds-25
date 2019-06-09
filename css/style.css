@@ -46,6 +46,7 @@ body {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
 a {
@@ -257,7 +258,6 @@ input[type="radio"].visually-hidden {
 
   width: 27px;
   height: 23px;
-  margin-top: 0;
   margin-left: -35px;
 
   background-image: url("../img/svg/checkbox-off.svg");
@@ -896,6 +896,7 @@ input[type="radio"].visually-hidden {
   margin: 0;
 
   -webkit-appearance: none;
+  appearance: none;
 }
 
 .input-list {
