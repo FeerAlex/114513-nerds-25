@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
   </head>
   <body>
@@ -25,7 +25,7 @@
               <a href="#0" class="nav-list__link">Клиенты</a>
             </li>
             <li class="nav-list__item nav-list__item--current">
-              <a href="catalog.html" class="nav-list__link">Магазин</a>
+              <a class="nav-list__link">Магазин</a>
             </li>
             <li class="nav-list__item">
               <a href="#0" class="nav-list__link">Контакты</a>
@@ -167,75 +167,87 @@
           </section>
           <ul class="products">
             <li class="product products__item">
-              <img src="img/pictures/products/sedona.jpg" alt="Превью Sedona" class="product__img" width="360" height="576">
               <div class="product__wrapper">
-                <h3 class="product__title">
-                  <a href="#0" class="product__link">Sedona</a>
-                </h3>
-                <p class="product__desc">Информационный сайт для туристов</p>
-                <button type="button" class="btn btn--red product__btn">
-                  <span class="btn__text">9 900 руб.</span>
-                </button>
+                <img src="img/pictures/products/sedona.jpg" alt="Превью Sedona" class="product__img" width="360" height="576">
+                <div class="product__detail">
+                  <h3 class="product__title">
+                    <a href="#0" class="product__link">Sedona</a>
+                  </h3>
+                  <p class="product__desc">Информационный сайт для туристов</p>
+                  <button type="button" class="btn btn--red product__btn">
+                    <span class="btn__text">9 900 руб.</span>
+                  </button>
+                </div>
               </div>
             </li>
             <li class="product products__item">
-              <img src="img/pictures/products/pink.jpg" alt="Превью Pink App" class="product__img" width="360" height="576">
               <div class="product__wrapper">
-                <h3 class="product__title">
-                  <a href="#0" class="product__link">Pink App</a>
-                </h3>
-                <p class="product__desc">Продуктовый лендинг приложения для iOS и Android</p>
-                <button type="button" class="btn btn--red product__btn">
-                  <span class="btn__text">9 900 руб.</span>
-                </button>
+                <img src="img/pictures/products/pink.jpg" alt="Превью Pink App" class="product__img" width="360" height="576">
+                <div class="product__detail">
+                  <h3 class="product__title">
+                    <a href="#0" class="product__link">Pink App</a>
+                  </h3>
+                  <p class="product__desc">Продуктовый лендинг приложения для iOS и Android</p>
+                  <button type="button" class="btn btn--red product__btn">
+                    <span class="btn__text">9 900 руб.</span>
+                  </button>
+                </div>
               </div>
             </li>
             <li class="product products__item">
-              <img src="img/pictures/products/barbershop.jpg" alt="Превью Barbershop" class="product__img" width="360" height="576">
               <div class="product__wrapper">
-                <h3 class="product__title">
-                  <a href="#0" class="product__link">Barbershop</a>
-                </h3>
-                <p class="product__desc">Сайт салона красоты. Для мужчин, да.</p>
-                <button type="button" class="btn btn--red product__btn">
-                  <span class="btn__text">9 900 руб.</span>
-                </button>
+                <img src="img/pictures/products/barbershop.jpg" alt="Превью Barbershop" class="product__img" width="360" height="576">
+                <div class="product__detail">
+                  <h3 class="product__title">
+                    <a href="#0" class="product__link">Barbershop</a>
+                  </h3>
+                  <p class="product__desc">Сайт салона красоты. Для мужчин, да.</p>
+                  <button type="button" class="btn btn--red product__btn">
+                    <span class="btn__text">9 900 руб.</span>
+                  </button>
+                </div>
               </div>
             </li>
             <li class="product products__item">
-              <img src="img/pictures/products/mishka.jpg" alt="Превью MISHKA" class="product__img" width="360" height="576">
               <div class="product__wrapper">
-                <h3 class="product__title">
-                  <a href="#0" class="product__link">MISHKA</a>
-                </h3>
-                <p class="product__desc">Интернет-магазин вязаных игрушек</p>
-                <button type="button" class="btn btn--red product__btn">
-                  <span class="btn__text">9 900 руб.</span>
-                </button>
+                <img src="img/pictures/products/mishka.jpg" alt="Превью MISHKA" class="product__img" width="360" height="576">
+                <div class="product__detail">
+                  <h3 class="product__title">
+                    <a href="#0" class="product__link">MISHKA</a>
+                  </h3>
+                  <p class="product__desc">Интернет-магазин вязаных игрушек</p>
+                  <button type="button" class="btn btn--red product__btn">
+                    <span class="btn__text">9 900 руб.</span>
+                  </button>
+                </div>
               </div>
             </li>
             <li class="product products__item">
-              <img src="img/pictures/products/aplus.jpg" alt="Превью A Plus" class="product__img" width="360" height="576">
               <div class="product__wrapper">
-                <h3 class="product__title">
-                  <a href="#0" class="product__link">A Plus</a>
-                </h3>
-                <p class="product__desc">Лендинг курсов повышения квалификации</p>
-                <button type="button" class="btn btn--red product__btn">
-                  <span class="btn__text">9 900 руб.</span>
-                </button>
+                <img src="img/pictures/products/aplus.jpg" alt="Превью A Plus" class="product__img" width="360" height="576">
+                <div class="product__detail">
+                  <h3 class="product__title">
+                    <a href="#0" class="product__link">A Plus</a>
+                  </h3>
+                  <p class="product__desc">Лендинг курсов повышения квалификации</p>
+                  <button type="button" class="btn btn--red product__btn">
+                    <span class="btn__text">9 900 руб.</span>
+                  </button>
+                </div>
               </div>
             </li>
             <li class="product products__item">
-              <img src="img/pictures/products/kvast.jpg" alt="Превью КВАСТ" class="product__img" width="360" height="576">
               <div class="product__wrapper">
-                <h3 class="product__title">
-                  <a href="#0" class="product__link">КВАСТ</a>
-                </h3>
-                <p class="product__desc">Промо-сайт производителя крафтового кваса</p>
-                <button type="button" class="btn btn--red product__btn">
-                  <span class="btn__text">9 900 руб.</span>
-                </button>
+                <img src="img/pictures/products/kvast.jpg" alt="Превью КВАСТ" class="product__img" width="360" height="576">
+                <div class="product__detail">
+                  <h3 class="product__title">
+                    <a href="#0" class="product__link">КВАСТ</a>
+                  </h3>
+                  <p class="product__desc">Промо-сайт производителя крафтового кваса</p>
+                  <button type="button" class="btn btn--red product__btn">
+                    <span class="btn__text">9 900 руб.</span>
+                  </button>
+                </div>
               </div>
             </li>
           </ul>
@@ -330,6 +342,6 @@
       </div>
     </section>
 
-    <script src="js/index.js"></script>
+    <script src="js/index.min.js"></script>
   </body>
 </html>
