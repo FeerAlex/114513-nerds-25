@@ -5,16 +5,13 @@
     <title>HTML Academy: Нёрдс</title>
     <link rel="stylesheet" href="css/normalize.min.css">
     <link rel="stylesheet" href="css/style.min.css">
-    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
   </head>
   <body>
     <header class="header">
       <div class="container header__container">
-        <div class="logo header__logo">
-          <a href="index.html" class="logo__link">
-            <img src="img/svg/logo.svg" alt="Логотип дизайн-студии Nerds" class="logo__img" width="160" height="65">
-          </a>
-        </div>
+        <a href="index.html" class="logo header__logo">
+          <img src="img/svg/logo.svg" alt="Логотип дизайн-студии Nerds" class="logo__img" width="160" height="65">
+        </a>
         
         <nav class="nav header__nav">
           <ul class="nav-list">
@@ -45,7 +42,7 @@
       <div class="wrapper">
         <section class="filter wrapper__filter">
           <h2 class="visually-hidden">Фильтр</h2>
-          <form action="/" class="search-form">
+          <form action="/" class="search-form" method="GET">
             <fieldset class="fieldset search-form__fieldset">
               <legend class="fieldset__legend fieldset__legend--price">Стоимость:</legend>
               <div class="gamut">
@@ -71,21 +68,21 @@
               <ul class="input-list">
                 <li class="input-list__item">
                   <label class="radio">
-                    <input class="radio__input visually-hidden" type="radio" name="grid" disabled>
+                    <input class="radio__input visually-hidden" type="radio" name="grid" value="adaptive" disabled>
                     <span class="radio__box"></span>
                     Адаптивная
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label class="radio">
-                    <input class="radio__input visually-hidden" type="radio" name="grid">
+                    <input class="radio__input visually-hidden" type="radio" name="grid" value="fixed">
                     <span class="radio__box"></span>
                     Фиксированная
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label class="radio">
-                    <input class="radio__input visually-hidden" type="radio" name="grid">
+                    <input class="radio__input visually-hidden" type="radio" name="grid" value="rubber">
                     <span class="radio__box"></span>
                     Резиновая
                   </label>
@@ -97,44 +94,42 @@
               <ul class="input-list">
                 <li class="input-list__item">
                   <label class="check">
-                    <input class="check__input visually-hidden" type="checkbox" name="block" checked>
+                    <input class="check__input visually-hidden" type="checkbox" name="block" value="slider" checked>
                     <span class="check__box"></span>
                     Слайдер
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label class="check">
-                    <input class="check__input visually-hidden" type="checkbox" name="block" disabled>
+                    <input class="check__input visually-hidden" type="checkbox" name="block" value="advantages" disabled>
                     <span class="check__box"></span>
                     Блок преимуществ
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label class="check">
-                    <input class="check__input visually-hidden" type="checkbox" name="block" checked disabled>
+                    <input class="check__input visually-hidden" type="checkbox" name="block" value="news" checked disabled>
                     <span class="check__box"></span>
                     Новости
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label class="check">
-                    <input class="check__input visually-hidden" type="checkbox" name="block">
+                    <input class="check__input visually-hidden" type="checkbox" name="block" value="gallery">
                     <span class="check__box"></span>
                     Галерея
                   </label>
                 </li>
                 <li class="input-list__item">
                   <label class="check">
-                    <input class="check__input visually-hidden" type="checkbox" name="block">
+                    <input class="check__input visually-hidden" type="checkbox" name="block" value="cart">
                     <span class="check__box"></span>
                     Корзина
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <button type="submit" class="btn btn--gray search-form__btn">
-              <span class="btn__text">Показать</span>
-            </button>
+            <button type="submit" class="btn btn--gray search-form__btn">Показать</button>
           </form>
         </section>
         <section class="wrapper__content">
@@ -173,10 +168,8 @@
                   <h3 class="product__title">
                     <a href="#0" class="product__link">Sedona</a>
                   </h3>
-                  <p class="product__desc">Информационный сайт для туристов</p>
-                  <button type="button" class="btn btn--red product__btn">
-                    <span class="btn__text">9 900 руб.</span>
-                  </button>
+                  <p class="product__desc">Информационный сайт<br>для туристов</p>
+                  <button type="button" class="btn btn--red product__btn">9 900 руб.</button>
                 </div>
               </div>
             </li>
@@ -188,9 +181,7 @@
                     <a href="#0" class="product__link">Pink App</a>
                   </h3>
                   <p class="product__desc">Продуктовый лендинг приложения для iOS и Android</p>
-                  <button type="button" class="btn btn--red product__btn">
-                    <span class="btn__text">9 900 руб.</span>
-                  </button>
+                  <button type="button" class="btn btn--red product__btn">9 900 руб.</button>
                 </div>
               </div>
             </li>
@@ -201,10 +192,8 @@
                   <h3 class="product__title">
                     <a href="#0" class="product__link">Barbershop</a>
                   </h3>
-                  <p class="product__desc">Сайт салона красоты. Для мужчин, да.</p>
-                  <button type="button" class="btn btn--red product__btn">
-                    <span class="btn__text">9 900 руб.</span>
-                  </button>
+                  <p class="product__desc">Сайт салона красоты.<br>Для мужчин, да.</p>
+                  <button type="button" class="btn btn--red product__btn">9 900 руб.</button>
                 </div>
               </div>
             </li>
@@ -215,10 +204,8 @@
                   <h3 class="product__title">
                     <a href="#0" class="product__link">MISHKA</a>
                   </h3>
-                  <p class="product__desc">Интернет-магазин вязаных игрушек</p>
-                  <button type="button" class="btn btn--red product__btn">
-                    <span class="btn__text">9 900 руб.</span>
-                  </button>
+                  <p class="product__desc">Интернет-магазин<br>вязаных игрушек</p>
+                  <button type="button" class="btn btn--red product__btn">9 900 руб.</button>
                 </div>
               </div>
             </li>
@@ -230,9 +217,7 @@
                     <a href="#0" class="product__link">A Plus</a>
                   </h3>
                   <p class="product__desc">Лендинг курсов повышения квалификации</p>
-                  <button type="button" class="btn btn--red product__btn">
-                    <span class="btn__text">9 900 руб.</span>
-                  </button>
+                  <button type="button" class="btn btn--red product__btn">9 900 руб.</button>
                 </div>
               </div>
             </li>
@@ -244,33 +229,23 @@
                     <a href="#0" class="product__link">КВАСТ</a>
                   </h3>
                   <p class="product__desc">Промо-сайт производителя крафтового кваса</p>
-                  <button type="button" class="btn btn--red product__btn">
-                    <span class="btn__text">9 900 руб.</span>
-                  </button>
+                  <button type="button" class="btn btn--red product__btn">9 900 руб.</button>
                 </div>
               </div>
             </li>
           </ul>
           <ul class="pagination">
             <li class="pagination__item">
-              <a href="#0" class="btn pagination__btn pagination__btn--active">
-                <span class="btn__text">1</span>
-              </a>
+              <a href="#0" class="btn pagination__btn pagination__btn--active">1</a>
             </li>
             <li class="pagination__item">
-              <a href="#0" class="btn pagination__btn">
-                <span class="btn__text">2</span>
-              </a>
+              <a href="#0" class="btn pagination__btn">2</a>
             </li>
             <li class="pagination__item">
-              <a href="#0" class="btn pagination__btn">
-                <span class="btn__text">3</span>
-              </a>
+              <a href="#0" class="btn pagination__btn">3</a>
             </li>
             <li class="pagination__item">
-              <a href="#0" class="btn pagination__btn pagination__btn--next">
-                <span class="btn__text">следующая</span>
-              </a>
+              <a href="#0" class="btn pagination__btn pagination__btn--next">следующая</a>
             </li>
           </ul>
         </section>
@@ -288,9 +263,7 @@
             <h3 class="contacts__title">NЁRDS DESIGN STUDIO</h3>
             <address class="contacts__address">191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</address>
             <a href="tel:+78122757575" class="contacts__phone">тел. +7 (812) 275-75-75</a>
-            <a href="#modal" class="btn btn--red contacts__btn" id="feedback">
-              <span class="btn__text">Напишите нам</span>
-            </a>
+            <a href="#modal" class="btn btn--red contacts__btn" id="feedback">Напишите нам</a>
           </section>
         </div>
       </section>
@@ -308,10 +281,10 @@
             </li>
           </ul>
     
-          <div class="appeal footer__appeal">
-            <p class="appeal__title"><b>Давайте дружить, это выгодно!</b></p>
-            <p class="appeal__hint">Скидка 10% для друзей из социальных сетей.</p>
-          </div>
+          <p class="appeal footer__appeal">
+            <b class="appeal__title">Давайте дружить, это выгодно!</b>
+            Скидка 10% для друзей из социальных сетей.
+          </p>
         </div>
       </div>
     </footer>
@@ -319,11 +292,11 @@
     <section class="modal" id="modal">
       <div class="modal__content">
         <h2 class="modal__title">Напишите нам</h2>
-        <form action="/" class="form modal__form">
+        <form action="https://echo.htmlacademy.ru" class="form modal__form" method="POST">
           <div class="form__wrapper">
             <div class="ipt form__field">
               <label for="request-name" class="ipt__label">Ваше имя:</label>
-              <input type="text" name="name" id="request-name" class="ipt__field" value="" placeholder="Имя Фамилия">
+              <input type="text" name="fio" id="request-name" class="ipt__field" value="" placeholder="Имя Фамилия">
             </div>
             <div class="ipt form__field">
               <label for="request-email" class="ipt__label">Ваш e-mail:</label>
@@ -334,14 +307,13 @@
             <label for="request-text" class="ipt__label">Текст письма:</label>
             <textarea name="text" id="request-text" class="ipt__field" placeholder="В свободной форме"></textarea>
           </div>
-          <button type="submit" class="btn btn--red form__btn">
-            <span class="btn__text">Отправить</span>
-          </button>
+          <button type="submit" class="btn btn--red form__btn">Отправить</button>
         </form>
-        <a href="#map" class="close modal__close">Закрыть</a>
+        <button type="button" class="close modal__close">Закрыть</button>
       </div>
     </section>
 
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
     <script src="js/index.min.js"></script>
   </body>
 </html>

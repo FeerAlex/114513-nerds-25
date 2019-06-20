@@ -5,17 +5,37 @@ if (typeof NodeList.prototype.forEach !== 'function')  {
 var fbBtn = document.querySelector('#feedback');
 var modal = document.querySelector('#modal');
 var modalClose = modal.querySelector('.modal__close');
-var form = modal.querySelector(".form");
+var form = modal.querySelector('.form');
+var fio = form.querySelector("[name=fio]");
+var email = form.querySelector("[name=email]");
+var text = form.querySelector("[name=text]");
+var isStorageSupport = true;
+var storage = "";
+
+try {
+  var data = localStorage.getItem("data");
+  storage = JSON.parse(data);
+} catch (err) {
+  isStorageSupport = false;
+}
 
 fbBtn.addEventListener('click', function (e) {
   e.preventDefault();
   modal.classList.add('modal--show');
-  form.querySelector('input').focus();
-  window.addEventListener("keydown", function (e) {
+
+  if (storage) {
+    fio.value = storage.fio;
+    email.value = storage.email;
+    text.focus();
+  } else {
+    fio.focus();
+  }
+
+  window.addEventListener('keydown', function (e) {
     if (e.keyCode === 27) {
       e.preventDefault();
 
-      if (modal.classList.contains("modal--show")) {
+      if (modal.classList.contains('modal--show')) {
         closeModal();
       }
     }
@@ -34,10 +54,14 @@ modalClose.addEventListener('click', function (e) {
 });
 
 form.addEventListener('submit', function (e) {
-  e.preventDefault();
-
   if (validate(form)) {
-    closeModal();
+    if (isStorageSupport) {
+      var data = JSON.stringify({
+        fio: fio.value,
+        email: email.value
+      });
+      localStorage.setItem("data", data);
+    }
   } else {
     modal.classList.remove('modal--error');
     modal.offsetWidth = modal.offsetWidth;
@@ -49,7 +73,6 @@ ymaps.ready(initMap);
 
 function closeModal() {
   clearForm(form);
-  modalClose.click();
   modal.classList.remove('modal--show');
   fbBtn.focus();
 }
@@ -84,7 +107,7 @@ function clearForm(form) {
 }
 
 function initMap() {
-  var myMap = new ymaps.Map("map", {
+  var myMap = new ymaps.Map('map', {
     center: [59.939099, 30.321523],
     zoom: 17
   });
